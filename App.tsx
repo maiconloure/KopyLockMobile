@@ -4,6 +4,8 @@ import { useFonts, Inter_400Regular, Inter_600SemiBold, Inter_700Bold, Inter_800
 
 import { Loading } from './src/components/Loading';
 import { Routes } from './src/routes';
+import { Logs } from 'expo'
+Logs.enableExpoCliLogging()
 
 export default function App() {
   const [fontsLoaded] = useFonts({
