@@ -33,7 +33,7 @@ export function NewHabit() {
   async function handleCreateNewHabit() {
     try {
       if(!title.trim() || weekDays.length === 0) {
-        Alert.alert('New Habit', 'Please, enter a valid title habit and chose the days of the recurrence.')
+        return Alert.alert('New Habit', 'Please, enter a valid title habit and chose the days of the recurrence.')
       }
 
       await api.post('/habits', { title, weekDays})
